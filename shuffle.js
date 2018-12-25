@@ -5,14 +5,14 @@ Array.prototype.shuffle = function(){
     const mix = []
     const correct = []
 
-    while(mix.length < this.length)
+    while(mix.length < length)
         {
-       const num = Math.floor(Math.random()*this.length) 
+       const num = Math.floor(Math.random()*length) 
             if(!mix.includes(num)){
             mix.push(num)
             }
         }
-    for(let i = 0; i < this.length ; i++)
+    for(let i = 0; i < length ; i++)
         {
             correct[i]=this[mix[i]]
         }
